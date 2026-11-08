@@ -1,0 +1,13 @@
+diff --git a/node_modules/mineflayer/lib/plugins/entities.js b/node_modules/mineflayer/lib/plugins/entities.js
+index 9fcb6f9..3c0a022 100644
+--- a/node_modules/mineflayer/lib/plugins/entities.js
++++ b/node_modules/mineflayer/lib/plugins/entities.js
+@@ -495,7 +495,7 @@ function inject (bot) {
+       }
+ 
+       // Breathing (formerly in breath.js)
+-      if (metas.air_supply != null) {
++      if (entity.id === bot.entity?.id && metas.air_supply != null) {
+         bot.oxygenLevel = Math.round(metas.air_supply / 15)
+         bot.emit('breath')
+       }
