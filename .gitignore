@@ -65,3 +65,6 @@ scripts/*-probe*.js
 scripts/registry-dump.js
 scripts/analyze-heapsnapshot.js
 *.log
+
+# WorkBuddy 本地记忆与项目数据（AI 助手生成，不进版本库）
+.workbuddy/
